@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Twittergram - Incredibox</title>
+  <style>
+    :root {
+      --sprunki-yellow: #ffec00;
+      --sprunki-blue: #0056b3;
+      --sprunki-dark-blue: #003d80;
+      --sprunki-red: #8b0000;
+      --text-white: #ffffff;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: var(--sprunki-blue);
+      background-image: radial-gradient(var(--sprunki-dark-blue) 1px, transparent 1px);
+      background-size: 20px 20px;
+      font-family: 'Arial Black', sans-serif;
+      color: var(--text-white);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .navbar {
+      width: 100%;
+      background: linear-gradient(to bottom, #fff785, var(--sprunki-yellow));
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0 20px;
+      box-sizing: border-box;
+      border-bottom: 4px solid #ccbc00;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: 900;
+      color: #0056b3;
+      text-transform: uppercase;
+      text-shadow: 2px 2px 0px #fff;
+      letter-spacing: -1px;
+    }
+
+    .game-container {
+      width: 100%;
+      max-width: 900px;
+      background-color: #000;
+      margin-top: 20px;
+      position: relative;
+      border: 5px solid #111;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+    }
+
+    .iframe-wrapper {
+      position: relative;
+      width: 100%;
+      padding-top: 56.25%; /* 16:9 */
+      background: #000;
+    }
+
+    iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+
+    .game-footer {
+      background-color: var(--sprunki-red);
+      padding: 10px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .game-title {
+      font-size: 18px;
+      text-transform: uppercase;
+      margin: 0;
+      color: white;
+      text-decoration: none;
+    }
+
+    .content-section {
+      width: 90%;
+      max-width: 900px;
+      background-color: rgba(0, 61, 128, 0.8);
+      margin: 20px 0;
+      padding: 20px;
+      border-radius: 8px;
+      border: 2px solid rgba(255,255,255,0.1);
+    }
+
+    .description h2 {
+      color: var(--sprunki-yellow);
+      border-bottom: 2px solid var(--sprunki-yellow);
+      padding-bottom: 5px;
+      margin-top: 0;
+    }
+
+    .btn-play {
+      display: inline-block;
+      background: var(--sprunki-yellow);
+      color: #000;
+      padding: 15px 25px;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+      margin: 10px 0;
+      transition: transform 0.2s;
+    }
+
+    .btn-play:hover {
+      transform: scale(1.05);
+    }
+
+    .tag {
+      display: inline-block;
+      background: var(--sprunki-yellow);
+      color: #000;
+      padding: 5px 10px;
+      border-radius: 4px;
+      font-size: 12px;
+      margin-right: 5px;
+      font-weight: bold;
+    }
+
+    @media (max-width: 600px) {
+      .logo { font-size: 18px; }
+      .game-title { font-size: 14px; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="logo">TWITTERGRAM</div>
+  </nav>
+
+  <!-- Pantalla Principal: Usamos Forkphorus para evitar el error de bloqueo -->
+  <div class="game-container">
+    <div class="iframe-wrapper">
+      <iframe 
+        src="https://forkphorus.github.io/embed.html?id=1274240932&auto-start=true" 
+        allowfullscreen>
+      </iframe>
+    </div>
+    <div class="game-footer">
+      <a href="https://michi-bcx123.itch.io/incredibox-twittergram" target="_blank" class="game-title">
+        Twittergram (Incredibox Mod) - JUGAR AHORA
+      </a>
+      <div style="font-size: 20px;">⛶</div>
+    </div>
+  </div>
+
+  <section class="content-section">
+    <div class="description">
+      <span class="tag">MOD</span>
+      <span class="tag">MUSIC</span>
+      <h2>Descripción del Proyecto</h2>
+      
+      <p>
+        La versión de <strong>Twittergram</strong> alojada en Itch.io debe abrirse en su propia ventana debido a restricciones de seguridad del servidor.
+      </p>
+
+      <center>
+        <a href="https://michi-bcx123.itch.io/incredibox-twittergram" target="_blank" class="btn-play">
+          HAGA CLIC AQUÍ PARA CARGAR TWITTERGRAM
+        </a>
+      </center>
+
+      <p style="margin-top: 20px;">
+        Bienvenido a este mod inspirado en el universo de Incredibox. 
+        Este proyecto combina ritmos únicos con una estética visual basada en redes sociales y personajes vibrantes.
+      </p>
+      <p>
+        <strong>Instrucciones:</strong> Si la pantalla principal de arriba no carga el mod específico, utiliza el botón amarillo para abrir la versión completa en Itch.io.
+      </p>
+    </div>
+  </section>
+
+  <footer style="margin-bottom: 40px; color: rgba(255,255,255,0.5); font-size: 12px;">
+    Creado para Lunzianda Jurs • 2026
+  </footer>
+
+</body>
+</html>
+
